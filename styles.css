@@ -1,0 +1,86 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body{
+    margin: 1.5em;
+}
+/* style the shop-title */
+.shop-name {
+  background-color: rgb(244, 217, 224);
+}
+
+/* Add a black background color to the top navigation */
+.topnav {
+  background-color: rgb(232, 146, 166);
+  overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+  background-color: #4a0109;
+  color: rgb(255, 255, 255);
+}
+.container {
+  width: 100%;
+  height: 100vh;
+  animation: animate 16s ease infinite;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 500px;
+  width: 100%;
+  background-attachment: fixed;
+}
+@keyframes animate {
+  0%,
+  100% {
+    background-image: url("Images/b-1.jpeg");
+  }
+  50% {
+    background-image: url("Images/b-4.jpeg");
+  }
+  75% {
+    background-image: url("Images/b-3.jpeg");
+  }
+}
+.home-bg p {
+  color: rgb(10, 5, 33);
+  font-size: 45px;
+  text-align: center;
+  padding: 10% 0;
+}
+.shop-container{
+    border: solid 1px rgb(55, 11, 211);
+    background-color: rgb(246, 249, 250)
+}
+.shop-container h2{
+text-align: center;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 15px;
+  margin:5em 3em;
+}
+
+.grid img {
+  width: 100%;
+  /* height: 50vh; */
+}
