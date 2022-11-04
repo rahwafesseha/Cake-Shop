@@ -1,12 +1,13 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 body {
   margin: 1.5em;
 }
 
-/* style the shop-title */
+/* style the shop-section */
 .shop-name {
   background-color: rgb(244, 217, 224);
   padding: 15px;
@@ -20,7 +21,6 @@ h2 {
   padding-top: 26px;
 }
 
-/* Add a black background color to the top navigation */
 .topnav {
   overflow: hidden;
   padding: 15px 0;
@@ -60,17 +60,19 @@ ul {
   font-size: 17px;
   transition: font-size 1s linear;
 }
-
+.hamburger {
+  display: none;
+}
 .container {
   width: 100%;
   height: 100vh;
-  animation: animate 16s ease infinite;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   height: 500px;
   width: 100%;
   background-attachment: fixed;
+  animation: animate 12s ease infinite;
 }
 @keyframes animate {
   0%,
@@ -94,7 +96,7 @@ ul {
 .about-container,
 .contact-wrap {
   background-color: rgb(252, 246, 247);
-  margin-top: 5%;
+  margin-top: 4%;
 }
 
 .grid {
@@ -106,17 +108,17 @@ ul {
 
 .grid img {
   width: 100%;
- 
 }
 .about-container img {
   border-radius: 50%;
   width: 400px;
   height: 400px;
-  margin: 5% 40%;
+  margin: 5% 35%;
 }
 .about-details {
   text-align: center;
-  margin: 6rem;
+  margin: 4rem;
+  padding-bottom: 15px;
 }
 
 form {
@@ -130,8 +132,9 @@ button {
   text-decoration: none;
   margin: 4px 2px;
   cursor: pointer;
+  margin-bottom: 15px;
 }
-button:hover{
+button:hover {
   background-color: #50021e;
 }
 
@@ -171,4 +174,16 @@ button:hover{
 
 .footer-info {
   margin-top: 2.5rem;
+}
+@media only screen and (max-width: 700px) {
+  ul {
+    /* Make menu in column*/
+    position: fixed;
+    margin-left: 55%;
+    background-color: beige;
+  }
+
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }

@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <script src="script.js"></script>
     <script
       src="https://kit.fontawesome.com/9569a39f56.js"
       crossorigin="anonymous"
@@ -15,73 +16,72 @@
     />
 
     <link rel="stylesheet" href="styles.css" />
-</head>
-<body>
+  </head>
+  <body>
     <div class="shop-name"><p>Deina's Bites</p></div>
     <div class="topnav">
-        <ul>
-           <li><a href="./index.html">Home</a></li>
-            <li><a href="./shop.html">Shop</a></li>
-              <li><a href="./aboutMe.html">About</a></li>
-            <li><a class="active" href="./contact.html">Contact</a></li>
-        </ul>
-      </div>
+      <ul>
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./shop.html">Shop</a></li>
+        <li><a href="./aboutMe.html">About</a></li>
+        <li><a class="active" href="./contact.html">Contact</a></li>
+      </ul>
+    </div>
     <section id="contact" class="contact-wrap">
-        <h2>HAVE A QUESTION?</h2>
-        <form>
-          <div class="row">
-            <div class="col-6">
-              <label for="first-name">First Name </label>
-              <input
-                type="text"
-                class="form-control"
-                id="first-name"
-                placeholder="Enter Your First Name"
-                name="first-name"
-                required
-              />
-            </div>
-            <div class="col-6">
-              <label for="last-name">Last Name </label>
-              <input
-                type="text"
-                class="form-control"
-                id="last-name"
-                placeholder="Enter Your Last Name"
-                name="last-name"
-              />
-            </div>
-          </div>
-          <div class="form-group">
-            <label for="email">Email Address</label>
+      <h2>HAVE A QUESTION?</h2>
+      <form onsubmit="alertFunction()">
+        <div class="row">
+          <div class="col-6">
+            <label for="first-name">First Name </label>
             <input
-              type="password"
+              type="text"
               class="form-control"
-              id="email"
-              placeholder="Enter Your Email Address"
-              name="email"
+              id="first-name"
+              placeholder="Enter Your First Name"
+              name="first-name"
+              required
             />
           </div>
-          <div>
-            <label for="file" class="form-label">Attach Doc</label>
-            <input class="form-control" id="file" type="file" />
+          <div class="col-6">
+            <label for="last-name">Last Name </label>
+            <input
+              type="text"
+              class="form-control"
+              id="last-name"
+              placeholder="Enter Your Last Name"
+              name="last-name"
+            />
           </div>
-          <div class="mb-3">
-            <label for="text-area" class="form-label"
-              >Write your message here
-            </label>
-            <textarea class="form-control" id="text-area" rows="3"></textarea>
-          </div>
-          <div class="checkbox">
-            <label
-              ><input type="checkbox" name="remember" /> Terms &
-              Conditions</label
-            >
-          </div>
-          <button type="submit">Submit</button>
-        </form>
-      </section>
-      <footer>
+        </div>
+        <div class="form-group">
+          <label for="email">Email Address</label>
+          <input
+            type="password"
+            class="form-control"
+            id="email"
+            placeholder="Enter Your Email Address"
+            name="email"
+          />
+        </div>
+        <div>
+          <label for="file" class="form-label">Attach Doc</label>
+          <input class="form-control" id="file" type="file" />
+        </div>
+        <div class="mb-3">
+          <label for="text-area" class="form-label"
+            >Write your message here
+          </label>
+          <textarea class="form-control" id="text-area" rows="3"></textarea>
+        </div>
+        <div class="checkbox">
+          <label
+            ><input type="checkbox" name="remember" /> Terms & Conditions</label
+          >
+        </div>
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+    <footer>
       <div class="socials-contact">
         <section class="contacts">
           <div class="call">
@@ -102,7 +102,9 @@
                 <a href="#"><i class="fab fa-twitter"></i></a>
               </li>
               <li>
-                <a href="https://www.linkedin.com/in/rahwa-g-michael-4553301a1/"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://www.linkedin.com/in/rahwa-g-michael-4553301a1/" target="_blank"
+                  ><i class="fab fa-linkedin-in"></i
+                ></a>
               </li>
               <li>
                 <a href="#"><i class="fab fa-instagram"></i></a>
@@ -114,5 +116,5 @@
         <small class="footer-info">Proudly created by Rahwa Fesseha.</small>
       </div>
     </footer>
-</body>
+  </body>
 </html>
