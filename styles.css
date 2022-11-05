@@ -13,7 +13,6 @@ body {
   padding-top: 4px;
   font-size: 30px;
   text-align: center;
- 
 }
 h2 {
   font-family: "Playfair Display", serif;
@@ -178,9 +177,9 @@ button:hover {
   .topnav ul {
     /* Make menu in column*/
     position: fixed;
-    top:0;
-    right:0;
-    padding-left: 15px;;
+    top: 0;
+    right: 0;
+    padding-left: 15px;
     margin-left: 55%;
     background-color: beige;
   }
@@ -189,7 +188,8 @@ button:hover {
     grid-template-columns: repeat(2, 1fr);
   }
   .about-container img {
-
-  margin: 5% 15%;
-}
+    width: 300px;
+    height: 300px;
+    margin: 5% 25%;
+  }
 }
