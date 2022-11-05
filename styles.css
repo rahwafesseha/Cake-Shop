@@ -10,9 +10,10 @@ body {
 /* style the shop-section */
 .shop-name {
   background-color: rgb(244, 217, 224);
-  padding: 15px;
+  padding-top: 4px;
   font-size: 30px;
   text-align: center;
+ 
 }
 h2 {
   font-family: "Playfair Display", serif;
